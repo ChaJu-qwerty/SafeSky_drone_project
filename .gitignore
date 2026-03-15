@@ -1,13 +1,12 @@
-# virtual environments
+# entornos virtuales
 venv/
 venv_drone/
-.env/
 
 # python
 __pycache__/
 *.pyc
 
-# modelos de deep learning
+# modelos
 *.pt
 *.pth
 *.weights
@@ -17,10 +16,7 @@ __pycache__/
 dataset/
 datasets/
 training/
-images/
-labels/
 
 # videos
 *.mp4
 *.avi
-*.mov
