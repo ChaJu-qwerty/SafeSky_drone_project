@@ -1,0 +1,26 @@
+# virtual environments
+venv/
+venv_drone/
+.env/
+
+# python
+__pycache__/
+*.pyc
+
+# modelos de deep learning
+*.pt
+*.pth
+*.weights
+*.onnx
+
+# datasets
+dataset/
+datasets/
+training/
+images/
+labels/
+
+# videos
+*.mp4
+*.avi
+*.mov

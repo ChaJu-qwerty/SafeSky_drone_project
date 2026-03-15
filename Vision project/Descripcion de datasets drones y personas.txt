@@ -1,0 +1,181 @@
+"Drone_Dataset_UAV" con carpetas "dataset_xml_format" (que tiene una carpeta "dataset_xml_format" con las immagenes en png y por cada imagen un xml donde tiene el bounding box) y "drone_dataset_yolo" (que tiene dentro la carpeta "dataset_txt" y adentro tiene imágenes un jpj y archivos de texto para cada imagen con las coordenadas de bounding box); este zip pesa 715 MB; estas son las indicaciones del dataset or el autor "About Dataset
+This dataset collected by me Mehdi Özel for a UAV Competition. When I search about "Drone (UAV) Dataset", I realized that the datasets only contain photos taken by UAVs(drone-to earth view mostly).
+So, I create this dataset to train our UAV to guide and dodge other UAVs.
+
+There are 1359 photos and all labeled.I have both ".txt" and ".xml" files to train on Darknet(yolo), Tensorflow and PyTorch Models.
+
+Please upvote if you like dataset.
+
+TIP: The dataset includes just rotary wing UAVs. Fixed wings are not included.
+If you want to cite me, you can just mention link of the dataset which is enough for me. This dataset is freely available for academical and fun purpose :)
+
+Mehdi Özel - Istanbul (Turkey)
+https://github.com/dasmehdix/drone-dataset
+
+You can cite me from here or here"
+
+
+
+
+
+"Autonomous Drone Landing Dataset (TEKNOFEST)" tiene las carpetas "train" (adentro hay una carpte "train" y adentro de esa carpate hay una de "images" (en jpg) y "labels" (en txt)) y "valid" (adentro hay una carpte "valid" y adentro de esa carpate hay una de "images" (en jpg) y "labels" (en txt)) y un archivo datta.yaml (train: ../train/images
+val: ../valid/images
+
+nc: 4
+names: ['Vehicle', 'UAP', 'UAI', 'Person'])
+este zip pesa 1.89 GB
+lo que el autor dice de este dataset es "About Dataset
+Autonomous Drone Landing & Object Detection Dataset
+Origin & Acknowledgments
+This dataset is derived from the TEKNOFEST AI in Aviation Competition (Havacılıkta Yapay Zeka Yarışması).
+
+Original Repository: TEKNOFEST GitHub Repository
+This dataset provides a pre-processed version of the competition data (converted from Pascal VOC to YOLO format, structured into Train/Val splits, and cleaned) to facilitate immediate model training.
+
+Context
+This dataset is designed to aid in the development of computer vision systems for autonomous Unmanned Aerial Vehicles (UAVs), specifically for precision landing and obstacle avoidance tasks. It contains high-resolution aerial imagery captured from a drone, featuring specific landing markers (pads), human subjects, and vehicles.
+
+The dataset is ideal for training models like YOLO, SSD, or Faster R-CNN to identify safe landing zones and avoid dynamic obstacles in real-time.
+
+Dataset Content
+The dataset consists of video frames extracted and annotated in Pascal VOC (XML) and converted to YOLO (TXT) formats.
+
+Resolution: 1920x1080 pixels
+Viewpoint: Top-down and angled aerial view (Drone footage)
+Environment: Outdoor track and field complex
+Annotation Formats:
+.xml (Pascal VOC standard)
+.txt (YOLO standard - Normalized coordinates)
+Class Descriptions (Labels)
+The dataset includes 4 distinct classes. Special attention has been given to distinguishing between different types of landing markers based on color and pattern.
+
+Class ID	Class Name	Visual Description	Function / Purpose
+0	Vehicle	Standard vehicles (cars) visible in the background.	Distractor objects / Obstacles.
+1	UAP	Cyan/Blue circular pad with "UAP" text in the center.	Primary Landing Target. Represents the designated safe landing zone.
+2	UAI	Red circular pad with a White Crescent symbol.	Secondary Landing Target. Represents a specialized mission zone or flag area.
+3	Person	Human subjects moving on the field.	Safety detection (Do not land if a person is detected).
+Use Cases
+Researchers and developers can use this dataset to build:
+
+Autonomous Landing Systems: Detecting the "UAP" or "UAI" markers to align the drone for descent.
+Safety Mechanisms: Preventing landing when a Person or Vehicle is too close to the target.
+Visual Servoing: Tracking the landing pad during flight to adjust velocity and position.
+Directory Structure
+```text
+dataset/
+├── train/
+│ ├── images/ (.png/.jpg)
+│ └── labels/ (.txt)
+├── valid/
+│ ├── images/
+│ └── labels/
+└── data.yaml (Configuration for YOLO training)"
+
+
+
+
+
+
+"Drone Detection" con tres carpetas "coco json drone detection" , "drone-detection-new.v5-new-train.yolov8" y "tensorflow obj detection drone"
+adentro, cada carpeta tiene sus propias tres carpetas "test"  , "train" y "valid", ademas de dos README y un data.yaml (train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['AirPlane', 'Drone', 'Helicopter']
+
+roboflow:
+  workspace: ahmedmohsen
+  project: drone-detection-new-peksv
+  version: 5
+  license: MIT
+  url: https://universe.roboflow.com/ahmedmohsen/drone-detection-new-peksv/dataset/5); cada una de las carpetas ""test"  , "train" y "valid""
+ tienen otras dos carpetas "images" (en jpg) y "labels" en txt; el zip pesa 500 MB
+lo que el autor dice del data set es "About Dataset
+This dataset consists of images featuring drones with annotated bounding boxes around each drone. The bounding boxes provide precise localization information, enabling detection and tracking of drones within various backgrounds and environments. Each image includes metadata such as bounding box coordinates, image resolution, and labels identifying the drone objects. This dataset is suitable for training and evaluating computer vision models for object detection tasks, particularly in applications like surveillance, drone detection, and autonomous tracking."
+
+
+
+
+
+
+"Aerial Semantic Drone Dataset" adentro tiene la carpeta "semantic_drone", adentro tiene un README un csv de  classes una caprta de images en pdng y una capeta de labels que teine dos carpetas "png" y "tiff", pesa 4.3 GB
+lo que le autor dice del dataset es "About Dataset
+Aerial Semantic Drone Dataset
+The Semantic Drone Dataset focuses on semantic understanding of urban scenes for increasing the safety of autonomous drone flight and landing procedures. The imagery depicts more than 20 houses from nadir (bird's eye) view acquired at an altitude of 5 to 30 meters above the ground. A high-resolution camera was used to acquire images at a size of 6000x4000px (24Mpx). The training set contains 400 publicly available images and the test set is made up of 200 private images.
+
+This dataset is taken from https://www.kaggle.com/awsaf49/semantic-drone-dataset. We remove and add files and information that we needed for our research purpose. We create our tiff files with a resolution of 1200x800 pixel in 24 channel with each channel represent classes that have been preprocessed from png files label. We reduce the resolution and compress the tif files with tiffile python library.
+
+If you have any problem with tif dataset that we have been modified you can contact nunenuh@gmail.com and gaungalif@gmail.com.
+
+This dataset was a copy from the original dataset (link below), we provide and add some improvement in the semantic data and classes. There are the availability of semantic data in png and tiff format with a smaller size as needed.
+
+Semantic Annotation
+The images are labelled densely using polygons and contain the following 24 classes:
+
+unlabeled
+paved-area
+dirt
+grass
+gravel
+water
+rocks
+pool
+vegetation
+roof
+wall
+window
+door
+fence
+fence-pole
+person
+dog
+car
+bicycle
+tree
+bald-tree
+ar-marker
+obstacle
+conflicting
+
+Directory Structure and Files
+> images
+> labels/png
+> labels/tiff
+  - class_to_idx.json
+  - classes.csv
+  - classes.json
+  - idx_to_class.json
+Included Data
+400 training images in jpg format can be found in "aerial_semantic_drone/images"
+Dense semantic annotations in png format can be found in "aerial_semantic_drone/labels/png"
+Dense semantic annotations in tiff format can be found in "aerial_semantic_drone/labels/tiff"
+Semantic class definition in csv format can be found in "aerial_semantic_drone/classes.csv"
+Semantic class definition in json can be found in "aerial_semantic_drone/classes.json"
+Index to class name file can be found in "aerial_semantic_drone/idx_to_class.json"
+Class name to index file can be found in "aerial_semantic_drone/idx_to_class.json""
+
+
+
+
+
+"Person Detection UAV - PASCAL_VOC_UAQ_MSUAV" tiene dos carptetas "PASCAL_VOC_UAQ_MSUAV" (adentro esta la carpera "images" en jpg y "labels" en txt, pero hay otra carpeta de "job_22_annotations_2026_01_21_06_12_40_yolo 1.1" que tieneobj.data, train.text, obj.names y una carpeta "obj_train_data" que tiene archivos .txt)y "UAQ_TEST_DISTANCE_LABEL" (tiene una carpera "testing" que tiene dos carpetas mas de "images" en jpg y "labels" en txt) este zip pesa 13 GB
+lo que el autor dice del data set es "About Dataset
+Context
+This dataset is designed for person detection tasks, specifically targeting challenges in aerial (UAV) and standard ground-level perspectives. It combines filtered data from the PASCAL VOC challenge with custom/UAV imagery.
+
+Content
+The dataset contains 15,500 images and their corresponding annotations.
+
+Classes: Only the "Person" class is included.
+
+Sources:
+
+Filtered images from PASCAL VOC (person class).
+
+UAV/Drone imagery (MSUAV/UAQ sources).
+
+Format: YOLO
+
+Inspiration
+This dataset was created to improve the robustness of person detection models in mixed-perspective environments."
