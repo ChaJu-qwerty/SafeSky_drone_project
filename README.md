@@ -21,12 +21,12 @@
 ## 📋 Tabla de Contenidos
 
 - [Descripción General](#-descripción-general)
-- [Arquitectura del Sistema](#-arquitectura-del-sistema)
-- [SafeSky — Simulador Python](#-safesky--simulador-python)
-- [Sistema de Visión YOLOv8](#-sistema-de-visión-yolov8)
+- [Arquitectura del Sistema](#arquitectura-del-sistema)
+- [SafeSky — Simulador Python](#safesky--simulador-python)
+- [Sistema de Visión YOLOv8](#sistema-de-visión-yolov8)
 - [Migración a Gazebo + ROS2 + PX4](#-migración-a-gazebo--ros2--px4)
 - [Estructura del Repositorio](#-estructura-del-repositorio)
-- [Instalación y Uso](#-instalación-y-uso)
+- [Instalación y Uso](#instalación-y-uso)
 - [Resultados](#-resultados)
 - [Referencias](#-referencias)
 
@@ -43,7 +43,7 @@ Ambos sistemas fueron posteriormente validados en **Gazebo Harmonic con PX4 SITL
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+## 🏗️ Arquitectura del Sistema <a name="-arquitectura-del-sistema"></a>
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
