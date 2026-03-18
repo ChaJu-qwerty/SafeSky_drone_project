@@ -20,19 +20,19 @@
 
 ## 📋 Tabla de Contenidos
 
-- [Descripción General](#-descripción-general)
+- [Descripción General](#descripcion-general)
 - [Arquitectura del Sistema](#arquitectura-del-sistema)
-- [SafeSky — Simulador Python](#safesky--simulador-python)
-- [Sistema de Visión YOLOv8](#sistema-de-visión-yolov8)
-- [Migración a Gazebo + ROS2 + PX4](#-migración-a-gazebo--ros2--px4)
-- [Estructura del Repositorio](#-estructura-del-repositorio)
-- [Instalación y Uso](#instalación-y-uso)
-- [Resultados](#-resultados)
-- [Referencias](#-referencias)
+- [SafeSky — Simulador Python](#safesky-simulador-python)
+- [Sistema de Visión YOLOv8](#sistema-de-vision-yolov8)
+- [Migración a Gazebo + ROS2 + PX4](#migracion-gazebo)
+- [Estructura del Repositorio](#estructura-repositorio)
+- [Instalación y Uso](#instalacion-y-uso)
+- [Resultados](#resultados)
+- [Referencias](#referencias)
 
 ---
 
-## 🚁 Descripción General
+## 🚁 Descripción General <a name="descripcion-general"></a>
 
 **SafeSky** es un entorno de simulación avanzado para la evaluación de algoritmos de **navegación, control y evasión de colisiones** en enjambres de vehículos aéreos no tripulados (UAVs). El sistema fue construido y validado en dos etapas:
 
@@ -43,7 +43,7 @@ Ambos sistemas fueron posteriormente validados en **Gazebo Harmonic con PX4 SITL
 
 ---
 
-## 🏗️ Arquitectura del Sistema <a name="-arquitectura-del-sistema"></a>
+## 🏗️ Arquitectura del Sistema <a name="arquitectura-del-sistema"></a>
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -74,7 +74,7 @@ Ambos sistemas fueron posteriormente validados en **Gazebo Harmonic con PX4 SITL
 
 ---
 
-## 🖥️ SafeSky — Simulador Python
+## 🖥️ SafeSky — Simulador Python <a name="safesky-simulador-python"></a>
 
 ### Modelo Físico (DJI F450)
 
@@ -127,7 +127,7 @@ Parámetros de simulación: `α = 0.85`, `σ = 0.60` (viento urbano moderado).
 
 ---
 
-## 👁️ Sistema de Visión YOLOv8
+## 👁️ Sistema de Visión YOLOv8 <a name="sistema-de-vision-yolov8"></a>
 
 ### Pipeline de Procesamiento
 
@@ -192,7 +192,7 @@ Vision project/
 
 ---
 
-## 🌐 Migración a Gazebo + ROS2 + PX4
+## 🌐 Migración a Gazebo + ROS2 + PX4 <a name="migracion-gazebo"></a>
 
 El sistema fue validado en un entorno de mayor fidelidad física:
 
@@ -210,7 +210,7 @@ chmod +x launch_safesky.sh
 
 ---
 
-## 📁 Estructura del Repositorio
+## 📁 Estructura del Repositorio <a name="estructura-repositorio"></a>
 
 ```
 SafeSky_drone_project/
@@ -241,7 +241,7 @@ SafeSky_drone_project/
 
 ---
 
-## ⚙️ Instalación y Uso
+## ⚙️ Instalación y Uso <a name="instalacion-y-uso"></a>
 
 ### Requisitos
 
@@ -288,7 +288,7 @@ python zn_safesky.py
 
 ---
 
-## 📊 Resultados
+## 📊 Resultados <a name="resultados"></a>
 
 ### Simulador SafeSky — Casos de Prueba
 
@@ -307,7 +307,7 @@ Todos los casos superaron el criterio de aceptación `e_B < 0.10 m` (salvo D3 en
 El modelo detectó simultáneamente un dron físico (confianza **0.74**) y una persona (confianza **0.84**) operando a **2 FPS sobre CPU**, suficiente para demostración funcional.
 
 
-## 📚 Referencias
+## 📚 Referencias <a name="referencias"></a>
 
 - Luukkonen, T. (2011). *Modelling and control of quadcopter*. Aalto University.
 - Bouabdallah, S., Noth, A., & Siegwart, R. (2004). PID vs LQ control techniques applied to an indoor micro quadrotor. *IEEE/RSJ IROS*.
