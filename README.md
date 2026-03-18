@@ -8,7 +8,9 @@
 ![PX4](https://img.shields.io/badge/PX4-SITL-5C2D91?style=for-the-badge)
 ![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-F58025?style=for-the-badge)
 
-**MR3001B · Tecnológico de Monterrey · 2026**
+**· Diseño y desarrollo de robots ·**
+
+**· Tecnológico de Monterrey · 2026 ·**
 
 *Simulación de enjambres de UAVs con dinámica 6-DOF, navegación híbrida y visión computacional en tiempo real*
 
@@ -26,7 +28,6 @@
 - [Estructura del Repositorio](#-estructura-del-repositorio)
 - [Instalación y Uso](#-instalación-y-uso)
 - [Resultados](#-resultados)
-- [Equipo](#-equipo)
 - [Referencias](#-referencias)
 
 ---
@@ -226,16 +227,16 @@ SafeSky_drone_project/
 │   └── zn_safesky.py                    # Justificación Z-N (figuras)
 │
 ├── Vision project/
-│   ├── drone_person_detection_fixed.ipynb
-│   ├── drone_person_laptop.ipynb
-│   ├── drone_project/
-│   │   └── tello_detection.py
-│   ├── training/
-│   ├── runs/
-│   ├── yolov8m.pt
-│   └── yolo26n.pt
-│
-└── EVIDENCIA_1_ANEXOS/                  # Documentación técnica
+    ├── drone_person_detection_fixed.ipynb
+    ├── drone_person_laptop.ipynb
+    ├── drone_project/
+    │   └── tello_detection.py
+    ├── training/
+    ├── runs/
+    ├── yolov8m.pt
+    └── yolo26n.pt
+
+
 ```
 
 ---
@@ -305,21 +306,6 @@ Todos los casos superaron el criterio de aceptación `e_B < 0.10 m` (salvo D3 en
 
 El modelo detectó simultáneamente un dron físico (confianza **0.74**) y una persona (confianza **0.84**) operando a **2 FPS sobre CPU**, suficiente para demostración funcional.
 
----
-
-## 👥 Equipo
-
-| Matrícula | Nombre | Contribución principal |
-|-----------|--------|----------------------|
-| A01255047 | Jorge Eduardo Arellano Cazares | Marco teórico (visión, capas de control), resumen ejecutivo del sistema de visión |
-| A01255346 | Briceida Judith Chavez Beltran | Marco teórico (UAVs, modelado físico), arquitectura y desarrollo del modelo de visión |
-| A01253766 | Yaeko González Hayakawa | Métricas de validación, implementación en el dron (secciones 4.1–4.3), trabajo futuro |
-| A01254967 | Alfonso Iván Leija Acosta | Introducción, desarrollo y resultados del simulador SafeSky |
-| A01255292 | Karen Lilian Madrigal Angulo | Marco teórico (capas de control), arquitectura del simulador SafeSky |
-
-**Docentes:** Víctor Hugo Benítez Baltazar · Sandy Natalie Campos Martínez · Jorge Enrique Clayton Valmaña · Cristian Núñez Gurrola
-
----
 
 ## 📚 Referencias
 
